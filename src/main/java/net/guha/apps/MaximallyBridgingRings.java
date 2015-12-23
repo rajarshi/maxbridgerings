@@ -50,6 +50,8 @@ public class MaximallyBridgingRings {
         return bridges;
     }
 
+    // A path is valid if it contains the two bridging atoms and no other atoms from the ring.
+    // As described on page 40 of http://www.nature.com/nature/journal/vaop/ncurrent/extref/nature16440-s1.pdf
     private boolean validPath(List<IAtom> path, IAtom atomi, IAtom atomj, IAtomContainer ring) {
         List<Integer> hashes = new ArrayList<>();
         for (IAtom atom : path) hashes.add(atom.hashCode());
