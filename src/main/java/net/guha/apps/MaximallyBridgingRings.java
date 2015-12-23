@@ -191,11 +191,13 @@ public class MaximallyBridgingRings {
 
         Map<IAtomContainer, List<IAtom>> bridges = mbr.getBridges();
         System.out.println("Found " + bridges.size() + " bridging rings");
-        for (IAtomContainer ring : bridges.keySet()) {
-            System.out.println(" Ring[" + ring.hashCode() + "] with " + bridges.get(ring).size() + " bridging atoms");
-        }
+        if (bridges.size() > 0) {
+            for (IAtomContainer ring : bridges.keySet()) {
+                System.out.println(" Ring[" + ring.hashCode() + "] with " + bridges.get(ring).size() + " bridging atoms");
+            }
 
-        // Render the first maximally bridging ring
-        mbr.depict(title);
+            // Render the first maximally bridging ring
+            mbr.depict(title);
+        }
     }
 }
