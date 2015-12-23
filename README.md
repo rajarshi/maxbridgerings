@@ -4,8 +4,7 @@ This repository contains code to compute one or more maximally bridging rings (M
 [Marth et al, Nature, 2015](http://dx.doi.org/10.1038/nature16440). These are used as part of a retrosynthetic
 strategy. The original work described
 the method and provide an online tool to run the computation on a submitted SDF/MOL file. However
-no source code was provided. Since this is a very simply method to implement, there's really no excuse for not
-including the sources with the publication. Hence this tool.
+no source code was provided. Hence this tool.
 
 The code here can be used to identify the MBR(s) in an input molecule. Currently the output is an SVG
 depiction of the molecule with the first MBR highlighted in red. The code allows you to access the subset
