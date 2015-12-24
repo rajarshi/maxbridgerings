@@ -98,12 +98,10 @@ public class MaximallyBridgingRings {
                 }
             }
             // count the number of bridging atoms in the ring
-            int nbridge = 0;
             List<IAtom> bridgingAtoms = new ArrayList<>();
             for (IAtom atom : ring.atoms()) {
                 Boolean bridging = atom.getProperty("bridging");
                 if (bridging != null && bridging) {
-                    nbridge++;
                     bridgingAtoms.add(atom);
                 }
             }
